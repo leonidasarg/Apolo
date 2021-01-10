@@ -1,0 +1,32 @@
+@import "base/colors";
+@import "base/fonts";
+@import "components/header";
+@import "components/cards";
+
+.section-blog {
+    background-color: $color-secundario;
+
+    h1 {
+        text-align: center;
+        @include titulos;
+    }
+
+    .blog-container {
+        @extend %cards;
+    
+        
+        div { 
+            margin: 40px 80px;
+            background-color: $color-primario;
+            padding: 30px;
+            border-radius: 15px;
+            h2 {
+                @include subtitulos;
+            }
+            p {
+                font-size: 10px;
+                padding-bottom: 10px;
+           }
+        }
+    }
+}
