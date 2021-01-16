@@ -20,9 +20,9 @@
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
-    color: #fffffe;
-    text-align: center;
-    color: #191970; }
+    padding-top: 30px;
+    color: #191970;
+    text-align: center; }
   .intro-container div {
     display: flex;
     align-items: center;
@@ -48,6 +48,7 @@
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
+    padding-top: 30px;
     color: #fffffe;
     padding-top: 20px; }
   .servicios-container .servicios-subcontainer {
@@ -68,6 +69,7 @@
         text-align: center;
         font-family: 'Titillium Web', sans-serif;
         font-size: 25px;
+        padding-top: 30px;
         color: #fffffe;
         margin-bottom: 10px;
         text-decoration: none; }
@@ -101,6 +103,7 @@
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
+    padding-top: 30px;
     color: #fffffe; }
   .section-blog .blog-container div {
     margin: 40px 80px;
@@ -116,7 +119,30 @@
       padding-bottom: 10px; }
 
 /*--------Newsletter-----------*/
+.newsletter-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
 /*--------Formulario-----------*/
+.form-container {
+  background-color: #00CED1;
+  align-items: center; }
+  .form-container h2 {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+    color: #191970; }
+  .form-container #contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #191970; }
+    .form-container #contacto .form-up {
+      margin: 10px; }
+
 /*----------Footer-------------*/
 .footer-container {
   background-color: #191970;
@@ -127,6 +153,7 @@
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
+    padding-top: 30px;
     color: #fffffe; }
   .footer-container ul li {
     color: #00CED1; }

@@ -1,8 +1,17 @@
-@mixin titulos {
+@mixin titulos-claro {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
+    padding-top: 30px;
     color: #fffffe;
+}
+
+@mixin titulos-oscuro {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+    color: $color-secundario;
 }
 
 @mixin subtitulos {
