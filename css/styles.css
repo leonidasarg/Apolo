@@ -5,6 +5,95 @@
   width: 100%;
   padding: 20px 80px; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*------------Nav--------------*/
+/*----------Banner-------------*/
+/*-------Intro-Nosotros--------*/
+.intro-container {
+  width: 100%;
+  height: 90%; }
+  .intro-container h1 {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    color: #fffffe;
+    text-align: center;
+    color: #191970; }
+  .intro-container div {
+    display: flex;
+    align-items: center;
+    margin: 30px 50px;
+    width: 80%;
+    justify-content: space-evenly; }
+    .intro-container div p {
+      text-align: left;
+      color: #191970;
+      margin-left: 30px; }
+    .intro-container div img {
+      width: 50%;
+      height: 50%;
+      margin-left: 50px;
+      display: block;
+      margin: auto; }
+
+/*---------Servicios-----------*/
+.servicios-container {
+  background-color: #191970;
+  padding-bottom: 40px; }
+  .servicios-container h2 {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    color: #fffffe;
+    padding-top: 20px; }
+  .servicios-container .servicios-subcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 50px; }
+    .servicios-container .servicios-subcontainer a:hover {
+      text-decoration: none; }
+    .servicios-container .servicios-subcontainer div {
+      text-align: center;
+      background-color: darkorchid;
+      padding: 20px;
+      border-radius: 3px; }
+      .servicios-container .servicios-subcontainer div img {
+        width: 40px;
+        height: 40px; }
+      .servicios-container .servicios-subcontainer div h3 {
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 25px;
+        color: #fffffe;
+        margin-bottom: 10px;
+        text-decoration: none; }
+      .servicios-container .servicios-subcontainer div button {
+        background-color: #191970;
+        color: #00CED1;
+        border: solid 1px;
+        padding: 3px 5px;
+        font-family: 'Titillium Web', sans-serif; }
+
+/*----------Frase--------------*/
+.frase {
+  background-color: #00CED1;
+  padding: 20px 50px;
+  align-items: center; }
+  .frase div {
+    width: 60%;
+    align-items: center; }
+  .frase p {
+    text-align: left;
+    color: #191970; }
+  .frase .autor {
+    color: #191970;
+    text-align: right; }
+
+/*-----------Blog--------------*/
 .section-blog {
   background-color: #191970; }
   .section-blog h1 {
@@ -12,7 +101,6 @@
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
-    padding-top: 30px;
     color: #fffffe; }
   .section-blog .blog-container div {
     margin: 40px 80px;
@@ -22,8 +110,25 @@
     .section-blog .blog-container div h2 {
       text-align: center;
       font-size: 18px bold;
-      margin-bottom: 5px;
       font-family: 'Roboto', sans-serif; }
     .section-blog .blog-container div p {
       font-size: 10px;
       padding-bottom: 10px; }
+
+/*--------Newsletter-----------*/
+/*--------Formulario-----------*/
+/*----------Footer-------------*/
+.footer-container {
+  background-color: #191970;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around; }
+  .footer-container h4 {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    color: #fffffe; }
+  .footer-container ul li {
+    color: #00CED1; }
+    .footer-container ul li a {
+      text-decoration: none; }

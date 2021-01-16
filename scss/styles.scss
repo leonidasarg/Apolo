@@ -3,6 +3,129 @@
 @import "components/header";
 @import "components/cards";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------Nav--------------*/
+/*----------Banner-------------*/
+/*-------Intro-Nosotros--------*/
+
+.intro-container {
+    
+    width: 100%;
+    height: 90%;        
+        h1 {
+            @include titulos;
+            text-align: center;
+            color: $color-secundario;
+        }
+        
+        div {
+            display: flex;
+            align-items: center;
+            margin: 30px 50px;
+            width: 80%;
+            justify-content: space-evenly;
+            
+            p {
+                text-align: left;
+                color: $color-secundario;
+                margin-left: 30px;
+            }
+
+            img {
+                width: 50%;
+                height: 50%;
+                margin-left: 50px;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+
+/*---------Servicios-----------*/
+
+.servicios-container {
+    background-color: $color-secundario;
+    padding-bottom: 40px;
+
+    h2 {
+        @include titulos;
+        padding-top: 20px;
+    }
+
+    .servicios-subcontainer {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px 50px;
+
+        a:hover{
+            text-decoration: none;
+
+        }
+
+        div {
+            text-align: center;
+            background-color: darkorchid;
+            padding: 20px;
+            border-radius: 3px;
+
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            h3 {
+                @include titulos;
+                margin-bottom: 10px;
+                text-decoration: none;
+            }
+
+            button {
+                background-color: $color-secundario;
+                color: $color-terciario;
+                border: solid 1px;
+                padding: 3px 5px;
+                font-family: 'Titillium Web', sans-serif;
+
+
+            }
+        }
+    }
+}
+
+
+
+/*----------Frase--------------*/
+
+.frase {
+    background-color: $color-terciario;
+    padding: 20px 50px;
+    align-items: center;
+
+    div{
+        width: 60%;
+        align-items: center;
+    }
+    
+    p { 
+        text-align: left;
+        color: $color-secundario;
+    }
+
+    .autor{
+        color: $color-secundario;
+        text-align: right;
+    }
+}
+
+/*-----------Blog--------------*/
+
+
 .section-blog {
     background-color: $color-secundario;
 
@@ -29,4 +152,28 @@
            }
         }
     }
+}
+
+/*--------Newsletter-----------*/
+/*--------Formulario-----------*/
+/*----------Footer-------------*/
+
+.footer-container{
+    background-color: $color-secundario;
+    padding:30px;
+    display: flex;
+    justify-content: space-around;
+        
+        h4 {
+            @include titulos
+        }
+        ul {
+            li {
+                color: $color-terciario;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
 }

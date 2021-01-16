@@ -33,12 +33,52 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:heigth" content="600">
 
-    <title>APOLO - Tu nueva agencia de marketing digital</title>
+    <title>APOLO - Agencia Digital</title>
 
 </head>
 <body>
 
-<!------------- Header---------------->
+
+    <!------------- NAV  ---------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/LOGO APOLO.png" alt="Logo-Apolo" width="100px" height="65px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Publicidad Digital</a></li>
+                  <li><a class="dropdown-item" href="#">Desarrollo Web</a></li>
+                  <li><a class="dropdown-item" href="#">Social Media</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+<!--    
     <header class="header">
         <div class="logo-header">
             <a href="index.html"><img src="images/LOGO APOLO.png" alt="Logo-Apolo" width="100px" height="65px"></a>
@@ -49,7 +89,7 @@
             <li ><a href="">HOME</a></li>
             <li class="dropdown"> <span>Servicios</span>
                 <ul class="dropdown-menu">
-                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Social Media</a></li>
                     <li><a href="#">Diseño Web</a></li>
                     <li><a href="#">Publicidad Digital</a></li>
                 </ul>
@@ -61,14 +101,8 @@
         </ul>
         </nav>
     </header>
-
-    <!-- 
-    <section class="banner-container">
-    <div class="banner">
-        <img src="images/Banner brk.png" alt="Banner">
-    </div>
-    </section>
 -->
+<!--------------- Banner Carrusel ----------------->
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
@@ -107,18 +141,58 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </a>
-  </div>
+</div>
 
-    <section class="intro-container">
-        <div class="intro">
-            <h1>Nosotros</h1>
+<!-------------- Intro-Nosotros -------------------->
+
+<section class="intro-container">
+    <h1>Nosotros</h1>
+    <div class="intro-subcontainer">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fuga dolorum dicta in. 
             Autem consequuntur at harum expedita? Ducimus deleniti quis, 
             impedit velit blanditiis repudiandae asperiores iure dolor nam nesciunt.</p>
+            <img src="images/imagen intro.jpg" alt="Somos el equipo de Apolo">
+    </div>
+</section>
+
+<!------------------- Servicios ---------------------->
+
+<section class="servicios-container">
+    <h2>Servicios</h2>
+        <div class="servicios-subcontainer">
+            <a href="">
+            <div >
+                <img src="images/iconos servicios publicidad digital.svg" alt="">
+                <h3>Publicidad Digital</h3>
+                <button>Saber más</button>
+            </div>
+            </a>
+            <div >
+                <img src="images/iconos servicios desarrollo-web.svg" alt="">
+                <h3>Desarrollo Web</h3>
+                <button>Saber más</button>
+            </div>
+
+            <div >
+                <img src="images/iconos servicios social media.svg" alt="">
+                <h3>Social Media</h3>
+                <button>Saber más</button>
+            </div>
         </div>
-    </section>
-    
-<!-----------Blog------------->
+</section>
+
+
+<!--------------------- Frase ------------------------>
+<section class="frase">
+    <div>
+        <p >"El marketing ya no es cuestión de lo que sabes producior,
+        sino de qué historias sabes contar"</p>
+        <p class="autor">- SETH GODIN</p>
+    </div>
+</section>
+
+<!--------------------- Blog ------------------------->
+
     <section class="section-blog">
         <h1>Blog</h1>
         <div class="blog-container">
@@ -139,10 +213,20 @@
             </div>
         </div>
 
-    </section>
+</section>
 
+<!------------------- Newsletter ------------------------>
 
+<div>
+    <div>
+        <p>No te pierdas ninguna noticia sobre el mundo del marketing digital.</p>
+    </div>
+    <div>
+        <iframe src="" frameborder="0"></iframe>
+    </div>
+</div>
 
+<!------------------- Formulario ----------------------->
 
     <Section class="form-container">
         <form id="contacto">
@@ -161,36 +245,41 @@
             <input type="submit" value="Enviar formulario" class="form-botton">
             </div>
         </form>
-        </Section>
+    </Section>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <a href="https://api.whatsapp.com/send?phone=3515339988&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-</a>
 
-<footer >
+<!----------------- Logo de Whatsapp ------------------->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=3515339988&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank"        >
+<i class="fa fa-whatsapp my-float"></i></a>
+
+
+<!--------------- FOOTER -------------------->
+
+<footer class="footer-container">
     <div class="footer-servicios">
         <h4>Servicios</h4>
         <ul>
-            <li><a href="">Marketing Digital</a></li>
-            <li>SEO</li>
-            <li></li>
-            <li></li>
+            <li><a href="">Publicidad Digital</a></li>
+            <li><a href="">Desarrollo Web</a></li>
+            <li><a href="">Social Media</a></li>
         </ul>
     </div>
 
     <div>
+        <h4>Información</h4>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="">HOME</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Contacto</a></li>
         </ul>
     </div>
 
     <div>
         <h4>Redes Sociales</h4>
-        <li class="fab fa-facebook-f"><a href=""><img src="" alt="instagram" ></a></li>
+        <li><a href=""><img src="" alt="instagram" ></a></li>
         <li><a href=""><img src="" alt="Facebook"></a></li>
         <li><a href=""><img src="" alt="whatsapp"></a></li>
     </div>
