@@ -11,74 +11,112 @@
   box-sizing: border-box; }
 
 /*------------Nav--------------*/
-/*----------Banner-------------*/
+/*----------Header-------------*/
+header {
+  width: 100%;
+  height: 600px;
+  background: #6441A5;
+  background: -webkit-linear-gradient(to right, rgba(41, 8, 68, 0.603), rgba(100, 65, 164, 0.61));
+  background: linear-gradient(to right, rgba(41, 8, 68, 0.603), rgba(100, 65, 164, 0.616)), url(../images/Banner-brk.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  header .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+  header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    header .textos-header h1 {
+      font-size: 50px;
+      color: #fff;
+      font-family: 'Titillium Web', sans-serif; }
+
 /*-------Intro-Nosotros--------*/
 .intro-container {
   width: 100%;
-  height: 90%; }
-  .intro-container h1 {
+  height: 400px; }
+  .intro-container h2 {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
     padding-top: 30px;
     color: #191970;
     text-align: center; }
-  .intro-container div {
+  .intro-container .intro-subcontainer {
     display: flex;
-    align-items: center;
-    margin: 30px 50px;
-    width: 80%;
-    justify-content: space-evenly; }
-    .intro-container div p {
-      text-align: left;
+    justify-content: space-evenly;
+    overflow: hidden; }
+    .intro-container .intro-subcontainer img {
+      width: 40%;
+      height: 300px;
+      margin-left: 20px; }
+    .intro-container .intro-subcontainer .intro-parrafo {
+      display: flex;
+      width: 48%;
+      text-align: justify;
       color: #191970;
-      margin-left: 30px; }
-    .intro-container div img {
-      width: 50%;
-      height: 50%;
-      margin-left: 50px;
-      display: block;
-      margin: auto; }
+      align-items: center;
+      font-weight: 300;
+      padding: 0 0 30px 15px; }
 
 /*---------Servicios-----------*/
 .servicios-container {
   background-color: #191970;
-  padding-bottom: 40px; }
+  width: 100%;
+  height: 400px; }
   .servicios-container h2 {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
     padding-top: 30px;
     color: #fffffe;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-bottom: 2rem; }
   .servicios-container .servicios-subcontainer {
     display: flex;
     justify-content: space-evenly;
-    margin: 0px 50px; }
-    .servicios-container .servicios-subcontainer a:hover {
-      text-decoration: none; }
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px; }
     .servicios-container .servicios-subcontainer div {
+      width: 20%;
       text-align: center;
-      background-color: darkorchid;
-      padding: 20px;
-      border-radius: 3px; }
+      border: solid 1px #181818;
+      border-radius: 3px;
+      align-items: center;
+      padding: 1rem;
+      transition: 0.5s; }
+      .servicios-container .servicios-subcontainer div:hover {
+        box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5); }
       .servicios-container .servicios-subcontainer div img {
-        width: 40px;
-        height: 40px; }
+        width: 40%; }
       .servicios-container .servicios-subcontainer div h3 {
         text-align: center;
         font-family: 'Titillium Web', sans-serif;
         font-size: 25px;
         padding-top: 30px;
-        color: #fffffe;
-        margin-bottom: 10px;
-        text-decoration: none; }
-      .servicios-container .servicios-subcontainer div button {
-        background-color: #191970;
-        color: #00CED1;
-        border: solid 1px;
-        padding: 3px 5px;
-        font-family: 'Titillium Web', sans-serif; }
+        color: #fffffe; }
+      .servicios-container .servicios-subcontainer div .btn-serv {
+        border: 1px solid #fff;
+        background: none;
+        color: #fff;
+        padding: 8px 16px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.8s;
+        position: relative;
+        overflow: hidden; }
+        .servicios-container .servicios-subcontainer div .btn-serv:hover {
+          color: #3498db;
+          background: white; }
 
 /*----------Frase--------------*/
 .frase {
@@ -121,8 +159,25 @@
 /*--------Newsletter-----------*/
 .newsletter-container {
   display: flex;
-  justify-content: space-between;
-  text-align: center; }
+  justify-content: space-between; }
+
+/*--------Logo WP-------------*/
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100; }
+
+.my-float {
+  margin-top: 16px; }
 
 /*--------Formulario-----------*/
 .form-container {
