@@ -2,8 +2,9 @@
 @import "base/fonts";
 @import "components/header";
 @import "components/cards";
+@import "components/buttons";
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,8 +13,6 @@
 
 
 
-
-/*------------Nav--------------*/
 
 /*----------Header-------------*/
 
@@ -55,7 +54,9 @@ header {
 .intro-container {
     
     width: 100%;
-    height: 400px;        
+    height: 400px;    
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0,.20);
+    
         h2 {
             @include titulos-oscuro;
             text-align: center;
@@ -64,7 +65,6 @@ header {
         .intro-subcontainer {
             display: flex;
             justify-content: space-evenly;
-            overflow: hidden;
 
             img{
                 width: 40%;
@@ -90,11 +90,13 @@ header {
 .servicios-container {
     background-color: $color-secundario;
     width: 100%;
-    height: 400px;
+    height: 450px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 20%);
+
 
     h2 {
         @include titulos-claro;
-        padding-top: 20px;
+        padding-top: 40px;
         margin-bottom: 2rem;
     }
 
@@ -113,9 +115,11 @@ header {
                align-items: center;
                padding: 1rem;
                transition: 0.5s;
+               background-color:  #31295a;
 
                &:hover {
                box-shadow: 3px 3px 2px 2px rgba(0,0,0,.5);
+               background-color: #2776aa;
                 }
                img {
                    width: 40%;
@@ -155,8 +159,12 @@ header {
 
 .frase {
     background-color: $color-terciario;
-    padding: 20px 50px;
+    width: 100%;
+    height: 150px;
+    display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 
     div{
         width: 60%;
@@ -179,6 +187,10 @@ header {
 
 .section-blog {
     background-color: $color-secundario;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 20%);
+    width: 100%;
+    height: 450px;
+
 
     h1 {
         text-align: center;
@@ -186,31 +198,35 @@ header {
     }
 
     .blog-container {
-        @extend %cards;
-    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         
-        div { 
-            margin: 40px 80px;
-            background-color: $color-primario;
-            padding: 30px;
-            border-radius: 15px;
-            h2 {
-                @include subtitulos;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 30px;
+                text-align: center;
+                background-color: #4683b477;
+                width: 25%;
+                height: 250px;
+                padding: 30px;
+                border-radius: 15px;
+
+
+                h2 {
+                    align-items: center;
+                    @include titulos-claro;
+                    font-size: 20px;
+                }
+                button{
+                @include boton-primario
+                    }
             }
-            p {
-                font-size: 10px;
-                padding-bottom: 10px;
-           }
         }
-    }
-}
-
-/*--------Newsletter-----------*/
-
-.newsletter-container{
-    display: flex;
-    justify-content: space-between;
-    }
+        }
 
 /*--------Logo WP-------------*/
 
@@ -236,27 +252,78 @@ header {
 /*--------Formulario-----------*/
 
 .form-container {
-    background-color: $color-terciario;
+    background-color: #eeeeee;
     align-items: center;
+    height: 500px;
+    width: 100%;
 
     h2{ 
         @include titulos-oscuro;
     }
 
-    #contacto{
+    .form-row{
+        display: flex;
+        height: 80%;
+        justify-content: space-evenly;
+        align-items: center;
+        flex: wrap;
+    }
+
+    .datos-contacto{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: 'Roboto', sans-serif;
-        color: $color-secundario;
+        justify-content: space-between;
+        width: 50%;
+        text-align: left;
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h5 {
+            @include titulos-oscuro;
+            text-decoration: none;
+        }
 
-
-
-            .form-up{
-                margin: 10px;
+        .redes-form{
+    
+            .iconos {
+                width: 50px;
+                height: 50px;
+                margin-top: 20px;
             }
+        }
     }
 
+    .formulario {
+        width: 60%;
+        text-align: center;
+
+        
+
+        .btn-form {
+            @include boton-primario;
+            color: $color-secundario;
+        }
+
+        div {
+            margin: 5px;
+            color: $color-secundario;
+        }
+
+        .input-contacto {
+            width: 65%;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: $color-terciario;
+            color: $color-secundario;
+            border: 1px solid;
+
+
+        }
+    }
 }
 
 /*----------Footer-------------*/
@@ -266,6 +333,7 @@ header {
     padding:30px;
     display: flex;
     justify-content: space-around;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 20%);
         
     h4{
         @include titulos-claro;
@@ -277,7 +345,79 @@ header {
 
             a{
                 text-decoration: none;
+
+
             }
         }
     }
+
+    .footer-redes {
+        text-align: center;
+
+        .iconos-footer {
+            display: inline;
+            width: 40px;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+
+    }
+
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .intro-container{
+        height: 1100px;
+    }
+
+    .intro-subcontainer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .servicios-container {
+        height: 1100px;
+
+    
+        .servicios-subcontainer {
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            div{ 
+                width: auto;
+            }
+        }
+    }
+
+.section-blog {
+    height: 1100px;
+
+    .blog-container {
+        flex-direction: column;
+
+        div{
+            width: 80%;
+        }
+    }
+}
+
+    .form-container{
+    height: 1100px;
+
+        .form-row {
+            flex-direction: column;
+            justify-content: space-evenly;
+            }
+        }
+
+    .footer-container{
+        height: 600px;
+        flex-direction: column;
+    }
+
 }
