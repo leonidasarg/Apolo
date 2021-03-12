@@ -126,7 +126,8 @@ header {
     width: 60%;
     align-items: center; }
   .frase p {
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
     color: #191970; }
   .frase .autor {
     color: #191970;
